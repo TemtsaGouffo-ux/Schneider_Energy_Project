@@ -6,7 +6,7 @@ path_csv = r"C:\Users\TEMTSA GOUFFO\OneDrive - Fondation EPF\Bureau\Nouveau doss
 path_excel = r"C:\Users\TEMTSA GOUFFO\OneDrive - Fondation EPF\Bureau\Nouveau dossier\metadata_clean_v2.xlsx"
 output_sql = "schneider_data_final.sql"
 
-print("🚀 Démarrage de l'ETL (Version Robuste)...")
+print("Démarrage de l'ETL ")
 
 try:
     # 1. CHARGEMENT
@@ -20,7 +20,7 @@ try:
     df_final = pd.merge(df_main, df_meta, on='Site_ID', how='left')
 
     # CONVERSION DATE
-    print("⏳ Conversion des dates...")
+    print(" Conversion des dates...")
     df_final['Timestamp'] = pd.to_datetime(df_final['Timestamp'], utc=True)
 
     # Colonnes SQL
@@ -30,14 +30,14 @@ try:
     df_final = df_final.fillna(0)
 
     total_rows = len(df_final)
-    print(f"✅ {total_rows} lignes prêtes à être écrites.")
+    print(f" {total_rows} lignes prêtes à être écrites.")
 
     # 3. ÉCRITURE PAR PAQUETS (SANS NUMPY)
     chunk_size = 1000
     # On calcule combien de blocs on va faire
     total_chunks = math.ceil(total_rows / chunk_size)
 
-    print(f"✍️ Écriture du fichier SQL en {total_chunks} blocs...")
+    print(f" Écriture du fichier SQL en {total_chunks} blocs...")
     
     with open(output_sql, 'w', encoding='utf-8') as f:
         # En-tête
@@ -80,8 +80,9 @@ try:
             f.write(",\n".join(values_list))
             f.write(";\n") 
 
-    print(f"\n🎉 SUCCÈS TOTAL ! Le fichier '{output_sql}' est généré.")
-    print("👉 Importe-le dans MySQL Workbench (via 'Run SQL Script').")
+    print(f"\n SUCCÈS TOTAL ! Le fichier '{output_sql}' est généré.")
+    print(" Importe-le dans MySQL Workbench (via 'Run SQL Script').")
 
 except Exception as e:
-    print(f"❌ Erreur : {e}")
+
+    print(f" Erreur : {e}")
