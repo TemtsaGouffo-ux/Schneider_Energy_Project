@@ -34,7 +34,7 @@ Concevoir une architecture de données "Full Stack" pour répondre à deux quest
 
 ---
 
-## 🛠 Stack Technique
+## Stack Technique
 | Outil | Usage |
 | :--- | :--- |
 | **Python (Pandas)** | ETL, Nettoyage des données, Calculs |
