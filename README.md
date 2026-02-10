@@ -21,7 +21,7 @@ Dans un contexte de crise énergétique et de régulations strictes (Décret Ter
 ### 2. Task (Objectif)
 Concevoir une architecture de données "Full Stack" pour répondre à deux questions métiers :
 * Quels bâtiments sont les moins performants (ratio kWh/m²) ?
-* Quel est l'impact financier de la surconsommation ?
+* Quel est l'impact financier de la consommation ?
 
 ### 3. Action (Réalisation Technique)
 * **Data Engineering (Python & SQL) :** Création d'un pipeline ETL pour nettoyer les données brutes (Wh vers kWh), gérer les dates et charger le tout dans une base MySQL locale.
@@ -29,9 +29,8 @@ Concevoir une architecture de données "Full Stack" pour répondre à deux quest
 * **Data Visualization (Power BI) :** Conception d'un tableau de bord interactif pour suivre la saisonnalité et les pics de charge (CVC).
 
 ### 4. Result (Impact)
-* **Identification :** Le **Site 1** a été identifié comme le plus énergivore (moins performant) (400 kWh/m² ) et ** Le **Site 3** a été identifié comme le moins énergivore(plus performant) (400 kWh/m² ).
-* **Finance :** Le coût total estimé est de **~578 k€**, avec un gisement d'économie potentiel de 10% par simple régulation.
-* **Technique :** Déploiement d'une solution automatisée capable de traiter de nouveaux flux de données instantanément.
+* **Identification :** Le **Site 1** a été identifié comme le plus énergivore (moins performant) (~400 kWh/m² ) et ** Le **Site 3** a été identifié comme le moins énergivore(plus performant) (~200 kWh/m² ).
+* **Finance :** Le coût total estimé est de **~578 k€** pour tous les 8 batiment en 1 an .
 
 ---
 
@@ -40,7 +39,7 @@ Concevoir une architecture de données "Full Stack" pour répondre à deux quest
 | :--- | :--- |
 | **Python (Pandas)** | ETL, Nettoyage des données, Calculs |
 | **MySQL** | Stockage et requêtes SQL complexes |
-| **Power BI** | Dashboarding, DAX, Storytelling |
+| **Power BI** | Dashboarding, Storytelling |
 | **Git / GitHub** | Versionning et Portfolio |
 
 ---
