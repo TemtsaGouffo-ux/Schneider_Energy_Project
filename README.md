@@ -8,6 +8,7 @@
 ## Liens & Ressources
 - **Fichier Power BI :** [Télécharger le .pbix](./EcoTrack_Dashboard.pbix)
 - **Code Python ETL :** [Voir le script](./etl_to_sql.py)
+- **Base de donné MySQL:** [Voir l'image](./etl_to_sql.png)
 
 ---
 
