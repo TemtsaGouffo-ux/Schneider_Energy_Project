@@ -1,6 +1,6 @@
 # EcoTrack : Schneider Electric Energy Monitoring
 
-![Dashboard Preview](dashboard_final.png)
+![Dashboard Preview](dashboard.png)
 
 > **Projet Data Engineering & Analytics** basé sur les données Open Data de Schneider Electric.
 > *Objectif : Identifier les passoires énergétiques et optimiser la consommation d'un parc de 8 bâtiments.*
