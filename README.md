@@ -44,4 +44,3 @@ Concevoir une architecture de données "Full Stack" pour répondre à deux quest
 
 ---
 *Projet réalisé par TEMTSA GOUFFO - Étudiant Ingénieur 3ème année (EPF).*
-*À la recherche d'une alternance Data Engineering/Data Science/Data Analysis pour Septembre 2026.*
