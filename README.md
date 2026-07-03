@@ -43,4 +43,4 @@ Concevoir une architecture de données "Full Stack" pour répondre à deux quest
 | **Git / GitHub** | Versionning et Portfolio |
 
 ---
-*Projet réalisé par TEMTSA GOUFFO - Étudiant Ingénieur 3ème année (EPF).*
+*Projet réalisé par TEMTSA GOUFFO 2026*
